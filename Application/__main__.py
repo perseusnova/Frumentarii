@@ -21,7 +21,7 @@ from client_config import ClientConfig
 import clie as clie
 
 APP_NAME = ClientConfig(); APP_NAME
-APP_VERSION = '1.0.0'
+APP_VERSION = '1.1.1'
 
 def print_status_info(info):
     total = info.get(u'total')
