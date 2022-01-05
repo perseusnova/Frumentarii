@@ -1,21 +1,51 @@
 import json
+import os
 import sys
 import time
-from typing import ValuesView
-from PySimpleGUI.PySimpleGUI import SELECT_MODE_SINGLE
-# import terminalv2 as tmlv2
-import PySimpleGUI as sg
-from time import sleep
 from socket import *
 # import terminalv2 as tml
 from threading import local
-from art import *
-from tqdm import tqdm, trange
 from time import sleep
-from colorama import Fore, Back, Style,init
+from typing import ValuesView
+
+# import terminalv2 as tmlv2
+import PySimpleGUI as sg
+from art import *
+from colorama import Back, Fore, Style, init
+from PySimpleGUI.PySimpleGUI import SELECT_MODE_SINGLE
 from termcolor import colored
-import Frumentarii.clie as clie
-import os
+from tqdm import tqdm, trange
+from pyupdater.client import Client
+from client_config import ClientConfig
+
+import clie as clie
+
+APP_NAME = ClientConfig(); APP_NAME
+APP_VERSION = '1.0.0'
+
+def print_status_info(info):
+    total = info.get(u'total')
+    downloaded = info.get(u'downloaded')
+    status = info.get(u'status')
+    print(downloaded, total, status)
+    
+client = Client(ClientConfig())
+client.refresh()
+
+client.add_progress_hook(print_status_info)
+app_update = client.update_check(APP_NAME, APP_VERSION)
+
+if app_update is not None:
+    
+    app_update.download()
+    
+if app_update.is_downloaded():
+    
+    app_update.extract_overwrite()
+    
+if app_update.is_downloaded():
+    
+    app_update.extract_restart()
 
 # #684 , 89
 # sg.theme('DarkPurple6')

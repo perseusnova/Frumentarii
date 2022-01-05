@@ -1,0 +1,32 @@
+{
+  "config_dir": "E:\\GIT\\frumentarii\\.pyupdater",
+  "filename": "E:\\GIT\\frumentarii\\.pyupdater\\config.pyu",
+  "count": 0,
+  "app_config": {
+    "APP_NAME": "frumentarii",
+    "CLIENT_CONFIG_PATH": [
+      "client_config.py"
+    ],
+    "COMPANY_NAME": "JackEaston",
+    "PLUGIN_CONFIGS": {},
+    "UPDATE_PATCHES": true,
+    "MAX_DOWNLOAD_RETRIES": 3,
+    "HTTP_TIMEOUT": 30,
+    "UPDATE_URLS": [
+      "https://github.com/perseusnova/pyupdater-wx-demo"
+    ],
+    "DATA_DIR": "E:\\GIT\\frumentarii"
+  },
+  "keypack": {
+    "client": {
+      "offline_public": "coGBxfv6BmRyw3TuucG2Awds5gRlk5fwxiDwAIIQ5v4"
+    },
+    "repo": {
+      "app_private": "ph3WU1oYiRAYqLxwNI8fxEz6YjjJC0gK9OmlT8iLH0s"
+    },
+    "upload": {
+      "app_public": "4VJ6ON3ITk58RI1zEzi4FAlSsSQbk2mt/p/ilSeyWzw",
+      "signature": "65Wph51/9+M809UoMgmjTye7IH5IAwUEPXkjaB6RFdjOHrYYryYjfIfgTNXfHj+1UmVotLG6xLw+us41tWUvBg"
+    }
+  }
+}
