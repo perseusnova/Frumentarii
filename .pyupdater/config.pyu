@@ -28,5 +28,33 @@
       "app_public": "4VJ6ON3ITk58RI1zEzi4FAlSsSQbk2mt/p/ilSeyWzw",
       "signature": "65Wph51/9+M809UoMgmjTye7IH5IAwUEPXkjaB6RFdjOHrYYryYjfIfgTNXfHj+1UmVotLG6xLw+us41tWUvBg"
     }
+  },
+  "version_meta": {
+    "updates": {
+      "frumentarii": {
+        "1.1.1.2.0": {
+          "win": {
+            "file_hash": "9c02abe313989769ec961e41020fa965db909f298c7b9181e7bc10973e093fed",
+            "file_size": 72401085,
+            "filename": "frumentarii-win-1.1.1.zip"
+          }
+        }
+      }
+    },
+    "latest": {
+      "frumentarii": {
+        "stable": {
+          "win": "1.1.1.2.0"
+        }
+      }
+    }
+  },
+  "py_repo_config": {
+    "patches": {},
+    "package": {
+      "frumentarii": {
+        "win": "1.1.1.2.0"
+      }
+    }
   }
 }
